@@ -108,6 +108,7 @@ if(NOT is_windows_store)
   set_target_properties(bzip2_bin PROPERTIES OUTPUT_NAME bzip2)
 endif()
 
+set( bzip2_SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR} )
 file(GLOB man1 ${bzip2_SOURCE_DIR}/*.1)
 
 
